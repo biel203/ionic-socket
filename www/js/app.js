@@ -22,9 +22,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
-  console.log("Adentrou ao app!");
-
-  $rootScope.socket = io.connect('wss://who-is-happy-chat.herokuapp.com/');
+  var testId = Math.random();
+  $rootScope.socket = io.connect('ws://10.8.1.103:3000/', {query : "private=true&userId=" + testId});
 
 })
 
