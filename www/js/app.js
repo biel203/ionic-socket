@@ -24,7 +24,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   console.log("Adentrou ao app!");
 
-  $rootScope.socket = io.connect('http://10.8.1.107:3000/');
+  $rootScope.socket = io.connect('wss://who-is-happy-chat.herokuapp.com/');
 
 })
 
